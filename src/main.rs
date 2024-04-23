@@ -1,17 +1,16 @@
 #![allow(unused)]
 
-mod my_reader;
-mod header;
 mod event;
-mod meta_event;
+mod header;
+mod my_reader;
 
 use std::{
     fs::{self, File},
     io::Read,
 };
 
-use crate::my_reader::MyReader;
 use crate::header::Header;
+use crate::my_reader::MyReader;
 
 fn main() {
     let bytes = read_file_bytes("demo.mid");
