@@ -54,7 +54,7 @@ impl MyReader {
         return result;
     }
 
-    fn read_variable_length_value(&mut self) -> u32 {
+    pub fn read_variable_length_value(&mut self) -> u32 {
         let mask: u8 = 0b0111_1111;
         let mut result_number: u32 = 0;
         let mut current_byte: u8;

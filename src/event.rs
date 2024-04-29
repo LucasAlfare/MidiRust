@@ -19,4 +19,3 @@ pub struct Event {
     pub delta_time: u32,
     pub data: Vec<EventDataType>
 }
-
