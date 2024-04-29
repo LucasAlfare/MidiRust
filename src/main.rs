@@ -3,6 +3,7 @@
 mod event;
 mod header;
 mod my_reader;
+mod track;
 
 use std::{
     fs::{self, File},
